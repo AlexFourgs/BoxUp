@@ -1,10 +1,19 @@
 [project]
-name = "athleticaapi"
+name = "BoxUp"
 version = "0.1.0"
-description = "Add your description here"
+description = "Application for booking sessions for crosstraining boxes."
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
+    "alembic>=1.17.0",
     "fastapi>=0.118.2",
+    "pydantic>=2.12.0",
+    "sqlalchemy>=2.0.44",
     "uvicorn>=0.37.0",
+]
+
+[dependency-groups]
+dev = [
+    "black>=25.9.0",
+    "pytest>=8.4.2",
 ]
